@@ -58,7 +58,7 @@ wandb_callback = WandbCallback(model_save_freq=1000,
 
 
 
-# variable for how often to save the model
+# variable for how often to save thlibegl1e model
 timesteps = 100000
 for i in range(10):
     # add the reset_num_timesteps=False argument to the learn function to prevent the model from resetting the timestep counter
