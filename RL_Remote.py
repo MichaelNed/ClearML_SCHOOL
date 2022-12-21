@@ -12,7 +12,7 @@ from wandb.integration.sb3 import WandbCallback
 from clearml import Task
 
 # Replace Pendulum-v1/YourName with your own project name (Folder/YourName, e.g. 2022-Y2B-RoboSuite/Michael)
-task = Task.init(project_name='Pendulum-v1/Pendulum', task_name='Pendulum')
+task = Task.init(project_name='MichaelNed/RemoteRL', task_name='Experiment1')
 #copy these lines exactly as they are
 #setting the base docker image
 task.set_base_docker('deanis/robosuite:py3.8-2')
