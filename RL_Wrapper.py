@@ -59,9 +59,9 @@ class RoboEnv(gym.Env):
 
 
 
-    def render(self, mode='human'):
+    def render(self):
         # Render the environment to the screen
-        self.env.render(mode = "human")
+        self.env.render()
 
     def close (self):
         # Close the environment
