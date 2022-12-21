@@ -4,7 +4,7 @@ import numpy as np
 import robosuite as suite
 
 class RoboEnv(gym.Env):
-    def __init__(self, RenderMode = True, Task = 'Lift'): # Add any arguments you need (Environment settings; Render mode  and task are used as examples)
+    def __init__(self, RenderMode = False, Task = 'Lift'): # Add any arguments you need (Environment settings; Render mode  and task are used as examples)
         super(RoboEnv, self).__init__()
         # Initialize environment variables
         self.RenderMode = RenderMode
