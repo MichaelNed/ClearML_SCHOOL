@@ -29,7 +29,7 @@ parser.add_argument("--n_epochs", type=int, default=10)
 args = parser.parse_args()
 
 
-env = RoboEnv()
+env = RoboEnv(RenderMode=False)
 
 
 #model.learn(total_timesteps=10000, progress_bar=True)
