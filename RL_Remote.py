@@ -1,7 +1,7 @@
 from stable_baselines3 import PPO
 import gym
 import time
-from RL_Remote import RoboEnv
+from RL_Wrapper import RoboEnv
 import argparse
 
 import os
