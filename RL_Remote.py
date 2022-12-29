@@ -39,7 +39,7 @@ env = RoboEnv(RenderMode=False)
 
 
 # initialize wandb project
-run = wandb.init(project="RL Pendulum",sync_tensorboard=True)
+run = wandb.init(project="RemoteRL",sync_tensorboard=True)
 
 # add tensorboard logging to the model
 model = PPO('MlpPolicy', env, verbose=1, 
