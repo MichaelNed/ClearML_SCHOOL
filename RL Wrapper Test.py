@@ -1,5 +1,5 @@
 from stable_baselines3.common.env_checker import check_env
-from RL_Wrapper import RoboEnv
+from RL_Remote import RoboEnv
 
 # Instantiate the environment
 env = RoboEnv(RenderMode = True)
