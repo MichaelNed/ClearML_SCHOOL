@@ -22,7 +22,7 @@ class RoboEnv(gym.Env):
                                 robots="Panda",
                                 has_renderer=self.RenderMode,
                                 has_offscreen_renderer=False,
-                                horizon=200,    
+                                horizon=500,    
                                 use_camera_obs=False,)
 
 
