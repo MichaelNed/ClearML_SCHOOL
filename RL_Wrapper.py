@@ -2,6 +2,19 @@ import gym
 from gym import spaces
 import numpy as np
 import robosuite as suite
+from scipy.spatial.transform import Rotation as R
+
+
+def quat_to_rpy(q):
+            #convert quaternion to roll, pitch, yaw
+            rpy = R.from_quat(q).as_euler('xyz', degrees=True)
+            #transform yaw to be between -90 and 90
+            if rpy[2]>90:
+                rpy[2] = rpy[2]-180
+            elif rpy[2]<-90:
+                rpy[2] = rpy[2]+180
+            return rpy
+
 
 class RoboEnv(gym.Env):
     def __init__(self, RenderMode = False, Task = 'Lift'): # Add any arguments you need (Environment settings; Render mode  and task are used as examples)
@@ -33,9 +46,13 @@ class RoboEnv(gym.Env):
         obs, reward, done, _ = self.env.step(action)
         # You may find it useful to create helper functions for the following
 
-        gripper_pos = obs["robot0_eef_quat"]
+        gripper_pos = obs["robot0_eef_pos"]
+        yaw_robot = quat_to_rpy(obs["robot0_eef_quat"])
+
 
         obs = np.hstack((obs["robot0_proprio-state"],gripper_pos))
+        obs = np.hstack((obs, yaw_robot))
+
         reward = 1 / np.linalg.norm(self.target_pos - gripper_pos)
         # done = # Calculate if the episode is done if you want to terminate the episode early
         return obs, reward, done, _
@@ -54,6 +71,7 @@ class RoboEnv(gym.Env):
         self.target_pos = np.array([x, y, z, yaw], dtype=np.float64)
 
         obs = np.hstack((obs["robot0_proprio-state"],self.target_pos))
+
         obs = np.array(obs,dtype=np.float64)
         return obs
 
