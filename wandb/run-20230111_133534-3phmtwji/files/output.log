@@ -1,0 +1,15 @@
+
+2023-01-11 13:36:00,992 - clearml.frameworks - INFO - Found existing registered model id=d5138c5a4dfe43ed86a12eb7b65bc1f1 [/Users/michael/Bestanden/GitHub/ClearML_SCHOOL/default_140704476821696_0] reusing it.
+2023-01-11 13:36:25,604 - clearml.frameworks - INFO - Found existing registered model id=d75c80d71dc742a2b20aaec10ed1c649 [/Users/michael/Bestanden/GitHub/ClearML_SCHOOL/default_140704476821696_1] reusing it.
+2023-01-11 13:36:51,115 - clearml.frameworks - INFO - Found existing registered model id=e464e8c4f6404099ad6553a9f49a0990 [/Users/michael/Bestanden/GitHub/ClearML_SCHOOL/default_140704476821696_2] reusing it.
+2023-01-11 13:37:11,437 - clearml.frameworks - INFO - Found existing registered model id=8738f054e0994f53b85fee19efabf885 [/Users/michael/Bestanden/GitHub/ClearML_SCHOOL/default_140704476821696_3] reusing it.
+2023-01-11 13:37:37,052 - clearml.frameworks - INFO - Found existing registered model id=6cf7e5323ae64a96b4d652a5df5f6986 [/Users/michael/Bestanden/GitHub/ClearML_SCHOOL/default_140704476821696_4] reusing it.
+2023-01-11 13:37:54,781 - clearml.frameworks - INFO - Found existing registered model id=628dde374aef411a9e9a4001b61d29f0 [/Users/michael/Bestanden/GitHub/ClearML_SCHOOL/default_140704476821696_5] reusing it.
+2023-01-11 13:38:17,694 - clearml.frameworks - INFO - Found existing registered model id=72995fb870c8438aaa4ab9162732dc2a [/Users/michael/Bestanden/GitHub/ClearML_SCHOOL/default_140704476821696_6] reusing it.
+2023-01-11 13:38:23,640 - clearml.frameworks - INFO - Found existing registered model id=7ff69cece387495ca6df8bcd304c933e [/Users/michael/Bestanden/GitHub/ClearML_SCHOOL/default_140704476821696_7] reusing it.
+2023-01-11 13:38:39,636 - clearml.frameworks - INFO - Found existing registered model id=cbab29a7336e484185ae6b7addde5f53 [/Users/michael/Bestanden/GitHub/ClearML_SCHOOL/default_140704476821696_8] reusing it.
+2023-01-11 13:39:13,752 - clearml.frameworks - INFO - Found existing registered model id=4b1d9e252fb240b6b7b1e231d715527c [/Users/michael/Bestanden/GitHub/ClearML_SCHOOL/default_140704476821696_9] reusing it.
+2023-01-11 13:39:17,103 - clearml.frameworks - INFO - Found existing registered model id=36cccc2a3c9e4cb499be2d406c9752d6 [/Users/michael/Bestanden/GitHub/ClearML_SCHOOL/default_140704476821696_10] reusing it.
+2023-01-11 13:39:41,865 - clearml.frameworks - INFO - Found existing registered model id=977072630cb344c4ab00534fa5102e05 [/Users/michael/Bestanden/GitHub/ClearML_SCHOOL/default_140704476821696_11] reusing it.
+2023-01-11 13:40:15,467 - clearml.frameworks - INFO - Found existing registered model id=2c95809763b9467caaec6ae767fc8ff8 [/Users/michael/Bestanden/GitHub/ClearML_SCHOOL/default_140704476821696_12] reusing it.
+2023-01-11 13:40:22,238 - clearml.frameworks - INFO - Found existing registered model id=277b5b758fff4471a144ac147bc6c856 [/Users/michael/Bestanden/GitHub/ClearML_SCHOOL/default_140704476821696_13] reusing it.

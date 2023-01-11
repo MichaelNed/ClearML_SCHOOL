@@ -53,7 +53,11 @@ class RoboEnv(gym.Env):
         obs = np.hstack((obs["robot0_proprio-state"],self.target_pos))
         obs = np.hstack((obs, yaw_robot))
 
-        reward = 1 / np.linalg.norm(self.target_pos - gripper_pos)
+        reward1 = 1 / np.linalg.norm(self.target_pos - gripper_pos)
+        reward2 = 1 / np.linalg.norm(self.target_yaw - yaw_robot)
+
+        reward = reward1 + reward2 / 0.2
+
         # done = # Calculate if the episode is done if you want to terminate the episode early
         return obs, reward, done, _
 
@@ -68,10 +72,12 @@ class RoboEnv(gym.Env):
         z = np.random.uniform(0.8, 1.3)
         yaw = np.random.uniform(-90, 90)
 
-        self.target_pos = np.array([x, y, z, yaw], dtype=np.float64)
+        self.target_pos = np.array([x, y, z], dtype=np.float64)
+        self.target_yaw = np.array([yaw])
+
 
         obs = np.hstack((obs["robot0_proprio-state"],self.target_pos))
-        obs = np.hstack((obs, quat_to_rpy(obs["robot0_eef_quat"])))
+        obs = np.hstack((obs, self.target_yaw))
 
         obs = np.array(obs,dtype=np.float64)
         return obs

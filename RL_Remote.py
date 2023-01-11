@@ -17,7 +17,7 @@ task = Task.init(project_name='MichaelNed/RemoteRL', task_name='Experiment2')
 #setting the base docker image
 task.set_base_docker('deanis/robosuite:py3.8-2')
 #setting the task to run remotely on the default queue
-task.execute_remotely(queue_name="default")
+#task.execute_remotely(queue_name="default")
 
 
 parser = argparse.ArgumentParser()
@@ -25,6 +25,8 @@ parser.add_argument("--learning_rate", type=float, default=0.0003)
 parser.add_argument("--batch_size", type=int, default=64)
 parser.add_argument("--n_steps", type=int, default=2048)
 parser.add_argument("--n_epochs", type=int, default=10)
+parser.add_argument("--timesteps", type=int, default=300000)
+
 
 args = parser.parse_args()
 
@@ -59,7 +61,7 @@ wandb_callback = WandbCallback(model_save_freq=1000,
 
 
 # variable for how often to save thlibegl1e model
-timesteps = 300000
+timesteps = args.timesteps
 for i in range(10):
     # add the reset_num_timesteps=False argument to the learn function to prevent the model from resetting the timestep counter
     # add the tb_log_name argument to the learn function to log the tensorboard data to the correct folder
