@@ -17,7 +17,7 @@ task = Task.init(project_name='MichaelNed/RemoteRL', task_name='Experiment2')
 #setting the base docker image
 task.set_base_docker('deanis/robosuite:py3.8-2')
 #setting the task to run remotely on the default queue
-#task.execute_remotely(queue_name="default")
+task.execute_remotely(queue_name="default")
 
 
 parser = argparse.ArgumentParser()
