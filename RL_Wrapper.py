@@ -13,7 +13,7 @@ def quat_to_rpy(q):
                 rpy[2] = rpy[2]-180
             elif rpy[2]<-90:
                 rpy[2] = rpy[2]+180
-            return rpy
+            return rpy[2]
 
 
 class RoboEnv(gym.Env):
@@ -50,7 +50,7 @@ class RoboEnv(gym.Env):
         yaw_robot = quat_to_rpy(obs["robot0_eef_quat"])
 
 
-        obs = np.hstack((obs["robot0_proprio-state"],gripper_pos))
+        obs = np.hstack((obs["robot0_proprio-state"],self.target_pos))
         obs = np.hstack((obs, yaw_robot))
 
         reward = 1 / np.linalg.norm(self.target_pos - gripper_pos)
@@ -71,6 +71,7 @@ class RoboEnv(gym.Env):
         self.target_pos = np.array([x, y, z, yaw], dtype=np.float64)
 
         obs = np.hstack((obs["robot0_proprio-state"],self.target_pos))
+        obs = np.hstack((obs, quat_to_rpy(obs["robot0_eef_quat"])))
 
         obs = np.array(obs,dtype=np.float64)
         return obs
