@@ -56,8 +56,8 @@ class RoboEnv(gym.Env):
         reward1 = 1 / np.linalg.norm(self.target_pos - gripper_pos)
         reward2 = 1 / np.linalg.norm(self.target_yaw - yaw_robot)
 
-        reward = reward1 + reward2 / 0.2
-
+        reward = reward1 #+ reward2 / 0.2
+        #self.env.render()
         # done = # Calculate if the episode is done if you want to terminate the episode early
         return obs, reward, done, _
 
@@ -84,10 +84,10 @@ class RoboEnv(gym.Env):
 
 
 
-    #def render(self):
+    def render(self):
         # Render the environment to the screen
     
-        #self.env.render()
+        self.env.render()
 
     def close (self):
         # Close the environment

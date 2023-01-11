@@ -1,0 +1,180 @@
+2023-01-11 14:04:36,518 INFO    StreamThr :6097 [internal.py:wandb_internal():87] W&B internal server running at pid: 6097, started at: 2023-01-11 14:04:36.516867
+2023-01-11 14:04:36,521 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: status
+2023-01-11 14:04:36,524 DEBUG   SenderThread:6097 [sender.py:send_request():317] send_request: status
+2023-01-11 14:04:36,526 INFO    WriterThread:6097 [datastore.py:open_for_write():75] open: /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/run-12mqg3aq.wandb
+2023-01-11 14:04:36,527 DEBUG   SenderThread:6097 [sender.py:send():303] send: header
+2023-01-11 14:04:36,527 DEBUG   SenderThread:6097 [sender.py:send():303] send: run
+2023-01-11 14:04:37,332 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: check_version
+2023-01-11 14:04:37,340 INFO    SenderThread:6097 [dir_watcher.py:__init__():216] watching files in: /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files
+2023-01-11 14:04:37,340 INFO    SenderThread:6097 [sender.py:_start_run_threads():928] run started: 12mqg3aq with start time 1673442276.503459
+2023-01-11 14:04:37,340 DEBUG   SenderThread:6097 [sender.py:send():303] send: summary
+2023-01-11 14:04:37,340 INFO    SenderThread:6097 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-11 14:04:37,340 DEBUG   SenderThread:6097 [sender.py:send_request():317] send_request: check_version
+2023-01-11 14:04:37,555 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: run_start
+2023-01-11 14:04:37,556 DEBUG   HandlerThread:6097 [system_info.py:__init__():31] System info init
+2023-01-11 14:04:37,557 DEBUG   HandlerThread:6097 [system_info.py:__init__():46] System info init done
+2023-01-11 14:04:37,557 INFO    HandlerThread:6097 [system_monitor.py:start():150] Starting system monitor
+2023-01-11 14:04:37,557 INFO    SystemMonitor:6097 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-01-11 14:04:37,557 INFO    HandlerThread:6097 [system_monitor.py:probe():171] Collecting system info
+2023-01-11 14:04:37,557 DEBUG   HandlerThread:6097 [system_info.py:probe():195] Probing system
+2023-01-11 14:04:37,558 DEBUG   HandlerThread:6097 [system_info.py:probe():241] Probing system done
+2023-01-11 14:04:37,558 INFO    SystemMonitor:6097 [interfaces.py:start():168] Started cpu
+2023-01-11 14:04:37,558 DEBUG   HandlerThread:6097 [system_monitor.py:probe():180] {'os': 'macOS-10.16-x86_64-i386-64bit', 'python': '3.8.15', 'heartbeatAt': '2023-01-11T13:04:37.558002', 'startedAt': '2023-01-11T13:04:36.487460', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/michael/Bestanden/GitHub/ClearML_SCHOOL/RL_Remote.py', 'codePath': 'RL_Remote.py', 'host': 'MacBook-Michael.local', 'username': 'michael', 'executable': '/Users/michael/opt/anaconda3/envs/robosuite/bin/python', 'cpu_count': 4, 'cpu_count_logical': 4, 'cpu_freq': {'current': 2300, 'min': 2300, 'max': 2300}, 'cpu_freq_per_core': [{'current': 2300, 'min': 2300, 'max': 2300}], 'disk': {'total': 348.3154067993164, 'used': 8.258598327636719}, 'memory': {'total': 16.0}}
+2023-01-11 14:04:37,558 INFO    HandlerThread:6097 [system_monitor.py:probe():181] Finished collecting system info
+2023-01-11 14:04:37,558 INFO    HandlerThread:6097 [system_monitor.py:probe():184] Publishing system info
+2023-01-11 14:04:37,558 DEBUG   HandlerThread:6097 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-01-11 14:04:37,558 INFO    SystemMonitor:6097 [interfaces.py:start():168] Started disk
+2023-01-11 14:04:37,559 INFO    SystemMonitor:6097 [interfaces.py:start():168] Started memory
+2023-01-11 14:04:37,559 INFO    SystemMonitor:6097 [interfaces.py:start():168] Started network
+2023-01-11 14:04:37,559 DEBUG   HandlerThread:6097 [system_info.py:_save_pip():67] Saving pip packages done
+2023-01-11 14:04:37,560 DEBUG   HandlerThread:6097 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-01-11 14:04:38,344 INFO    Thread-13 :6097 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files/wandb-summary.json
+2023-01-11 14:04:38,344 INFO    Thread-13 :6097 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files/requirements.txt
+2023-01-11 14:04:38,345 INFO    Thread-13 :6097 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files/conda-environment.yaml
+2023-01-11 14:04:42,596 DEBUG   HandlerThread:6097 [system_info.py:_save_conda():86] Saving conda packages done
+2023-01-11 14:04:42,597 INFO    HandlerThread:6097 [system_monitor.py:probe():186] Finished publishing system info
+2023-01-11 14:04:42,631 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-11 14:04:42,632 DEBUG   SenderThread:6097 [sender.py:send_request():317] send_request: stop_status
+2023-01-11 14:04:42,966 DEBUG   SenderThread:6097 [sender.py:send():303] send: telemetry
+2023-01-11 14:04:42,966 DEBUG   SenderThread:6097 [sender.py:send():303] send: files
+2023-01-11 14:04:42,966 INFO    SenderThread:6097 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2023-01-11 14:04:42,966 DEBUG   SenderThread:6097 [sender.py:send():303] send: telemetry
+2023-01-11 14:04:43,351 INFO    Thread-13 :6097 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files/conda-environment.yaml
+2023-01-11 14:04:43,351 INFO    Thread-13 :6097 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files/wandb-metadata.json
+2023-01-11 14:04:44,342 INFO    Thread-16 :6097 [upload_job.py:push():143] Uploaded file /var/folders/d2/tc3g6bk52g72yqwkfqcrsv9h0000gn/T/tmpi99xiiq9wandb/2gaovh66-wandb-metadata.json
+2023-01-11 14:04:44,559 INFO    HandlerThread:6097 [handler.py:handle_tbrecord():724] handling tbrecord: tbrecord {
+  log_dir: "runs/12mqg3aq/runs/12mqg3aq_0"
+  save: true
+}
+control {
+  relay_id: "5acb6312dd374bf7bb0f00d4b67d5afe"
+}
+_info {
+  stream_id: "12mqg3aq"
+}
+
+2023-01-11 14:04:44,559 DEBUG   HandlerThread:6097 [config_util.py:dict_from_config_file():100] no default config file found in config-defaults.yaml
+2023-01-11 14:04:44,586 DEBUG   SenderThread:6097 [sender.py:send():303] send: tbrecord
+2023-01-11 14:04:44,587 DEBUG   SenderThread:6097 [sender.py:send():303] send: config
+2023-01-11 14:04:44,588 DEBUG   SenderThread:6097 [sender.py:send():303] send: files
+2023-01-11 14:04:44,588 INFO    SenderThread:6097 [sender.py:_save_file():1171] saving file events.out.tfevents.1673442284.MacBook-Michael.local.6075.0 with policy live
+2023-01-11 14:04:44,730 DEBUG   SenderThread:6097 [sender.py:send():303] send: exit
+2023-01-11 14:04:44,730 INFO    SenderThread:6097 [sender.py:send_exit():442] handling exit code: 1
+2023-01-11 14:04:44,731 INFO    SenderThread:6097 [sender.py:send_exit():444] handling runtime: 7
+2023-01-11 14:04:44,732 INFO    SenderThread:6097 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-11 14:04:44,732 INFO    SenderThread:6097 [sender.py:send_exit():450] send defer
+2023-01-11 14:04:44,733 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 14:04:44,733 INFO    HandlerThread:6097 [handler.py:handle_request_defer():162] handle defer: 0
+2023-01-11 14:04:44,734 DEBUG   SenderThread:6097 [sender.py:send_request():317] send_request: defer
+2023-01-11 14:04:44,734 INFO    SenderThread:6097 [sender.py:send_request_defer():459] handle sender defer: 0
+2023-01-11 14:04:44,735 INFO    SenderThread:6097 [sender.py:transition_state():463] send defer: 1
+2023-01-11 14:04:44,735 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 14:04:44,736 INFO    HandlerThread:6097 [handler.py:handle_request_defer():162] handle defer: 1
+2023-01-11 14:04:44,736 INFO    HandlerThread:6097 [system_monitor.py:finish():160] Stopping system monitor
+2023-01-11 14:04:44,749 DEBUG   SystemMonitor:6097 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-01-11 14:04:44,750 DEBUG   SystemMonitor:6097 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-01-11 14:04:44,750 DEBUG   SystemMonitor:6097 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-01-11 14:04:44,750 INFO    HandlerThread:6097 [interfaces.py:finish():175] Joined cpu
+2023-01-11 14:04:44,751 INFO    HandlerThread:6097 [interfaces.py:finish():175] Joined disk
+2023-01-11 14:04:44,751 INFO    HandlerThread:6097 [interfaces.py:finish():175] Joined memory
+2023-01-11 14:04:44,751 INFO    HandlerThread:6097 [interfaces.py:finish():175] Joined network
+2023-01-11 14:04:44,751 DEBUG   SenderThread:6097 [sender.py:send_request():317] send_request: defer
+2023-01-11 14:04:44,751 INFO    SenderThread:6097 [sender.py:send_request_defer():459] handle sender defer: 1
+2023-01-11 14:04:44,751 INFO    SenderThread:6097 [sender.py:transition_state():463] send defer: 2
+2023-01-11 14:04:44,751 DEBUG   SenderThread:6097 [sender.py:send():303] send: stats
+2023-01-11 14:04:44,752 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 14:04:44,752 INFO    HandlerThread:6097 [handler.py:handle_request_defer():162] handle defer: 2
+2023-01-11 14:04:44,752 DEBUG   SenderThread:6097 [sender.py:send_request():317] send_request: defer
+2023-01-11 14:04:44,752 INFO    SenderThread:6097 [sender.py:send_request_defer():459] handle sender defer: 2
+2023-01-11 14:04:44,752 INFO    SenderThread:6097 [sender.py:transition_state():463] send defer: 3
+2023-01-11 14:04:44,752 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 14:04:44,752 INFO    HandlerThread:6097 [handler.py:handle_request_defer():162] handle defer: 3
+2023-01-11 14:04:45,359 INFO    Thread-13 :6097 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files/wandb-summary.json
+2023-01-11 14:04:45,359 INFO    Thread-13 :6097 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files/events.out.tfevents.1673442284.MacBook-Michael.local.6075.0
+2023-01-11 14:04:45,503 INFO    Thread-19 :6097 [upload_job.py:push():143] Uploaded file /var/folders/d2/tc3g6bk52g72yqwkfqcrsv9h0000gn/T/tmpi99xiiq9wandb/4fz2qw4m-events.out.tfevents.1673442284.MacBook-Michael.local.6075.0
+2023-01-11 14:04:51,575 DEBUG   SenderThread:6097 [sender.py:send_request():317] send_request: defer
+2023-01-11 14:04:51,575 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-11 14:04:51,576 INFO    SenderThread:6097 [sender.py:send_request_defer():459] handle sender defer: 3
+2023-01-11 14:04:51,576 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-11 14:04:51,577 INFO    SenderThread:6097 [sender.py:transition_state():463] send defer: 4
+2023-01-11 14:04:51,577 DEBUG   SenderThread:6097 [sender.py:send_request():317] send_request: poll_exit
+2023-01-11 14:04:51,578 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 14:04:51,578 INFO    HandlerThread:6097 [handler.py:handle_request_defer():162] handle defer: 4
+2023-01-11 14:04:51,578 DEBUG   SenderThread:6097 [sender.py:send():303] send: summary
+2023-01-11 14:04:51,580 INFO    SenderThread:6097 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-11 14:04:51,580 DEBUG   SenderThread:6097 [sender.py:send_request():317] send_request: defer
+2023-01-11 14:04:51,581 INFO    SenderThread:6097 [sender.py:send_request_defer():459] handle sender defer: 4
+2023-01-11 14:04:51,581 INFO    SenderThread:6097 [sender.py:transition_state():463] send defer: 5
+2023-01-11 14:04:51,582 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 14:04:51,582 INFO    HandlerThread:6097 [handler.py:handle_request_defer():162] handle defer: 5
+2023-01-11 14:04:51,582 DEBUG   SenderThread:6097 [sender.py:send_request():317] send_request: defer
+2023-01-11 14:04:51,582 INFO    SenderThread:6097 [sender.py:send_request_defer():459] handle sender defer: 5
+2023-01-11 14:04:52,028 INFO    SenderThread:6097 [sender.py:transition_state():463] send defer: 6
+2023-01-11 14:04:52,029 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 14:04:52,029 INFO    HandlerThread:6097 [handler.py:handle_request_defer():162] handle defer: 6
+2023-01-11 14:04:52,029 DEBUG   SenderThread:6097 [sender.py:send_request():317] send_request: defer
+2023-01-11 14:04:52,029 INFO    SenderThread:6097 [sender.py:send_request_defer():459] handle sender defer: 6
+2023-01-11 14:04:52,029 INFO    SenderThread:6097 [sender.py:transition_state():463] send defer: 7
+2023-01-11 14:04:52,029 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 14:04:52,029 INFO    HandlerThread:6097 [handler.py:handle_request_defer():162] handle defer: 7
+2023-01-11 14:04:52,030 DEBUG   SenderThread:6097 [sender.py:send_request():317] send_request: defer
+2023-01-11 14:04:52,030 INFO    SenderThread:6097 [sender.py:send_request_defer():459] handle sender defer: 7
+2023-01-11 14:04:52,030 INFO    SenderThread:6097 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-01-11 14:04:52,383 INFO    Thread-13 :6097 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files/config.yaml
+2023-01-11 14:04:52,384 INFO    SenderThread:6097 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files/wandb-summary.json
+2023-01-11 14:04:52,384 INFO    SenderThread:6097 [dir_watcher.py:finish():392] scan: /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files
+2023-01-11 14:04:52,384 INFO    SenderThread:6097 [dir_watcher.py:finish():406] scan save: /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files/requirements.txt requirements.txt
+2023-01-11 14:04:52,385 INFO    SenderThread:6097 [dir_watcher.py:finish():406] scan save: /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files/events.out.tfevents.1673442284.MacBook-Michael.local.6075.0 events.out.tfevents.1673442284.MacBook-Michael.local.6075.0
+2023-01-11 14:04:52,387 INFO    SenderThread:6097 [dir_watcher.py:finish():406] scan save: /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files/config.yaml config.yaml
+2023-01-11 14:04:52,388 INFO    SenderThread:6097 [dir_watcher.py:finish():406] scan save: /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files/wandb-summary.json wandb-summary.json
+2023-01-11 14:04:52,390 INFO    SenderThread:6097 [dir_watcher.py:finish():406] scan save: /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files/conda-environment.yaml conda-environment.yaml
+2023-01-11 14:04:52,393 INFO    SenderThread:6097 [dir_watcher.py:finish():406] scan save: /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files/wandb-metadata.json wandb-metadata.json
+2023-01-11 14:04:52,394 INFO    SenderThread:6097 [sender.py:transition_state():463] send defer: 8
+2023-01-11 14:04:52,396 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 14:04:52,397 INFO    HandlerThread:6097 [handler.py:handle_request_defer():162] handle defer: 8
+2023-01-11 14:04:52,397 DEBUG   SenderThread:6097 [sender.py:send_request():317] send_request: defer
+2023-01-11 14:04:52,397 INFO    SenderThread:6097 [sender.py:send_request_defer():459] handle sender defer: 8
+2023-01-11 14:04:52,398 INFO    SenderThread:6097 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-11 14:04:53,700 INFO    Thread-20 :6097 [upload_job.py:push():143] Uploaded file /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files/requirements.txt
+2023-01-11 14:04:53,704 INFO    Thread-22 :6097 [upload_job.py:push():143] Uploaded file /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files/wandb-summary.json
+2023-01-11 14:04:53,707 INFO    Thread-21 :6097 [upload_job.py:push():143] Uploaded file /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files/config.yaml
+2023-01-11 14:04:54,111 INFO    Thread-23 :6097 [upload_job.py:push():143] Uploaded file /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/files/conda-environment.yaml
+2023-01-11 14:04:54,317 INFO    Thread-12 :6097 [sender.py:transition_state():463] send defer: 9
+2023-01-11 14:04:54,317 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 14:04:54,318 INFO    HandlerThread:6097 [handler.py:handle_request_defer():162] handle defer: 9
+2023-01-11 14:04:54,318 DEBUG   SenderThread:6097 [sender.py:send_request():317] send_request: defer
+2023-01-11 14:04:54,318 INFO    SenderThread:6097 [sender.py:send_request_defer():459] handle sender defer: 9
+2023-01-11 14:04:54,318 INFO    SenderThread:6097 [file_pusher.py:join():173] waiting for file pusher
+2023-01-11 14:04:54,318 INFO    SenderThread:6097 [sender.py:transition_state():463] send defer: 10
+2023-01-11 14:04:54,319 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 14:04:54,319 INFO    HandlerThread:6097 [handler.py:handle_request_defer():162] handle defer: 10
+2023-01-11 14:04:54,319 DEBUG   SenderThread:6097 [sender.py:send_request():317] send_request: defer
+2023-01-11 14:04:54,319 INFO    SenderThread:6097 [sender.py:send_request_defer():459] handle sender defer: 10
+2023-01-11 14:04:54,503 INFO    SenderThread:6097 [sender.py:transition_state():463] send defer: 11
+2023-01-11 14:04:54,504 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 14:04:54,504 INFO    HandlerThread:6097 [handler.py:handle_request_defer():162] handle defer: 11
+2023-01-11 14:04:54,504 DEBUG   SenderThread:6097 [sender.py:send_request():317] send_request: defer
+2023-01-11 14:04:54,504 INFO    SenderThread:6097 [sender.py:send_request_defer():459] handle sender defer: 11
+2023-01-11 14:04:54,504 INFO    SenderThread:6097 [sender.py:transition_state():463] send defer: 12
+2023-01-11 14:04:54,505 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: defer
+2023-01-11 14:04:54,506 INFO    HandlerThread:6097 [handler.py:handle_request_defer():162] handle defer: 12
+2023-01-11 14:04:54,506 DEBUG   SenderThread:6097 [sender.py:send():303] send: final
+2023-01-11 14:04:54,506 DEBUG   SenderThread:6097 [sender.py:send():303] send: footer
+2023-01-11 14:04:54,506 DEBUG   SenderThread:6097 [sender.py:send_request():317] send_request: defer
+2023-01-11 14:04:54,506 INFO    SenderThread:6097 [sender.py:send_request_defer():459] handle sender defer: 12
+2023-01-11 14:04:54,507 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-11 14:04:54,508 DEBUG   SenderThread:6097 [sender.py:send_request():317] send_request: poll_exit
+2023-01-11 14:04:54,509 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: server_info
+2023-01-11 14:04:54,509 DEBUG   SenderThread:6097 [sender.py:send_request():317] send_request: server_info
+2023-01-11 14:04:54,511 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: get_summary
+2023-01-11 14:04:54,512 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: sampled_history
+2023-01-11 14:04:56,405 INFO    MainThread:6097 [wandb_run.py:_footer_history_summary_info():3408] rendering history
+2023-01-11 14:04:56,405 INFO    MainThread:6097 [wandb_run.py:_footer_history_summary_info():3440] rendering summary
+2023-01-11 14:04:56,405 INFO    MainThread:6097 [wandb_run.py:_footer_sync_info():3364] logging synced files
+2023-01-11 14:04:56,406 DEBUG   HandlerThread:6097 [handler.py:handle_request():139] handle_request: shutdown
+2023-01-11 14:04:56,406 INFO    HandlerThread:6097 [handler.py:finish():814] shutting down handler
+2023-01-11 14:04:56,511 INFO    WriterThread:6097 [datastore.py:close():279] close: /Users/michael/Bestanden/GitHub/ClearML_SCHOOL/wandb/run-20230111_140436-12mqg3aq/run-12mqg3aq.wandb
+2023-01-11 14:04:57,409 INFO    SenderThread:6097 [sender.py:finish():1331] shutting down sender
+2023-01-11 14:04:57,409 INFO    SenderThread:6097 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-11 14:04:57,409 INFO    SenderThread:6097 [file_pusher.py:join():173] waiting for file pusher
+2023-01-11 14:04:57,983 INFO    MainThread:6097 [internal.py:handle_exit():77] Internal process exited

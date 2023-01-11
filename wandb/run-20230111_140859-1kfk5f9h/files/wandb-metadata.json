@@ -1,0 +1,36 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.15",
+    "heartbeatAt": "2023-01-11T13:08:59.858891",
+    "startedAt": "2023-01-11T13:08:59.121653",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/michael/Bestanden/GitHub/ClearML_SCHOOL/RL_Remote.py",
+    "codePath": "RL_Remote.py",
+    "host": "MacBook-Michael.local",
+    "username": "michael",
+    "executable": "/Users/michael/opt/anaconda3/envs/robosuite/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 2300,
+        "min": 2300,
+        "max": 2300
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2300,
+            "min": 2300,
+            "max": 2300
+        }
+    ],
+    "disk": {
+        "total": 348.3154067993164,
+        "used": 8.258598327636719
+    },
+    "memory": {
+        "total": 16.0
+    }
+}
