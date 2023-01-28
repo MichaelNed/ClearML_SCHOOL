@@ -17,7 +17,7 @@ def quat_to_rpy(q):
 
 
 class RoboEnv(gym.Env):
-    def __init__(self, RenderMode = False, Task = 'Lift'): # Add any arguments you need (Environment settings; Render mode  and task are used as examples)
+    def __init__(self, RenderMode = False, Task = 'PickPlace'): # Add any arguments you need (Environment settings; Render mode  and task are used as examples)
         super(RoboEnv, self).__init__()
         # Initialize environment variables
         self.RenderMode = RenderMode
@@ -55,6 +55,12 @@ class RoboEnv(gym.Env):
 
         reward1 = 1 / np.linalg.norm(self.target_pos - gripper_pos)
         reward2 = 1 / np.linalg.norm(self.target_yaw - yaw_robot)
+        reward2 = np.clip(reward2,-2,2)
+
+
+        print("Reward1: ", reward1)
+        print("Reward2: ", reward2)
+
 
         reward = reward1 + reward2 / 0.2
         #self.env.render()
@@ -67,7 +73,7 @@ class RoboEnv(gym.Env):
         obs = self.env.reset()
         # Reset any variables that need to be reset
         # Example of generating random values
-        x = np.random.uniform(-0.5, 0.5)
+        x = np.random.uniform(-0.3, 0.3)
         y = np.random.uniform(-0.5, 0.5)
         z = np.random.uniform(0.8, 1.3)
         yaw = np.random.uniform(-90, 90)
