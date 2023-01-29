@@ -62,7 +62,7 @@ class RoboEnv(gym.Env):
         print("Reward2: ", reward2)
 
 
-        reward = reward1 + reward2 / 0.2
+        reward = reward1 + reward2
         #self.env.render()
         # done = # Calculate if the episode is done if you want to terminate the episode early
         return obs, reward, done, _
