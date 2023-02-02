@@ -55,7 +55,7 @@ class RoboEnv(gym.Env):
 
         reward1 = 1 / np.linalg.norm(self.target_pos - gripper_pos)
         reward2 = 1 / np.linalg.norm(self.target_yaw - yaw_robot)
-        reward2 = np.clip(reward2,-2,2)
+        reward2 = np.clip(reward2,-10,10)
 
 
         print("Reward1: ", reward1)
