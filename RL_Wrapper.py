@@ -26,7 +26,7 @@ class RoboEnv(gym.Env):
         # Define action and observation space
         # They must be gym.spaces objects
         # Example when using discrete actions:
-        self.action_space = spaces.Box(low=np.float32(np.tile([0, 0, 0, 0, 0, -10],(8, 1))), high=np.float32(np.tile([1, 1, 1, 1, 1, 10],(8, 1))), shape= (8,))
+        self.action_space = spaces.Box(low=np.float32(np.tile([0, 0, 0, 0, 0, -10],(8, ))), high=np.float32(np.tile([1, 1, 1, 1, 1, 10],(8, ))))
         # Example for using image as input:
         self.observation_space = spaces.Box(low=-np.inf,high=np.inf,shape=(36,), dtype=np.float64)
 
