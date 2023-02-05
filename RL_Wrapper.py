@@ -62,6 +62,7 @@ class RoboEnv(gym.Env):
 
         print("Reward1: ", reward1)
         print("Reward2: ", reward2)
+        print("Target Yaw: ", self.target_yaw)
 
 
         reward = reward1 + reward2
@@ -82,7 +83,6 @@ class RoboEnv(gym.Env):
 
         self.target_pos = np.array([x, y, z], dtype=np.float64)
         self.target_yaw = np.array([yaw])
-        print("Target Yaw: ", yaw)
 
 
         obs = np.hstack((obs["robot0_proprio-state"],self.target_pos))
