@@ -52,6 +52,7 @@ class RoboEnv(gym.Env):
 
 
         obs = np.hstack((obs["robot0_proprio-state"],self.target_pos))
+        obs = np.hstack((obs,self.target_yaw))
 
 
         reward1 = 1 / np.linalg.norm(self.target_pos - gripper_pos)
