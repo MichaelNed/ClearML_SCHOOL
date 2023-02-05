@@ -54,8 +54,7 @@ class RoboEnv(gym.Env):
         obs = np.hstack((obs, self.target_yaw))
 
         reward1 = 1 / np.linalg.norm(self.target_pos - gripper_pos)
-        reward2 = 1 / np.abs(self.target_yaw - yaw_robot)
-        reward2 = reward2[0]
+        reward2 = 1 / self.target_yaw - yaw_robot
         reward2 = np.clip(reward2,-10,10)
 
 
