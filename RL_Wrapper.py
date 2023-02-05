@@ -82,7 +82,7 @@ class RoboEnv(gym.Env):
 
         self.target_pos = np.array([x, y, z], dtype=np.float64)
         self.target_yaw = np.array([yaw])
-        print("Target Yaw: ", self.target_yaw)
+        print("Target Yaw: ", yaw)
 
 
         obs = np.hstack((obs["robot0_proprio-state"],self.target_pos))
