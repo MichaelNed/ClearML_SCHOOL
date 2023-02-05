@@ -13,6 +13,7 @@ def quat_to_rpy(q):
                 rpy[2] = rpy[2]-180
             elif rpy[2]<-90:
                 rpy[2] = rpy[2]+180
+            print("Robot yaw: ",rpy[2])
             return rpy[2]
 
 
@@ -26,7 +27,7 @@ class RoboEnv(gym.Env):
         # Define action and observation space
         # They must be gym.spaces objects
         # Example when using discrete actions:
-        self.action_space = spaces.Box(low=np.float32(np.tile([0, 0, 0, 0, 0, 0, -10, 0],(1, ))), high=np.float32(np.tile([0, 0, 0, 0, 0, 0, -10, 0],(1, ))), shape=(8,))
+        self.action_space = spaces.Box(low=-1, high=1, shape= (8,))    
         # Example for using image as input:
         self.observation_space = spaces.Box(low=-np.inf,high=np.inf,shape=(36,), dtype=np.float64)
 
@@ -51,11 +52,11 @@ class RoboEnv(gym.Env):
 
 
         obs = np.hstack((obs["robot0_proprio-state"],self.target_pos))
-        obs = np.hstack((obs, self.target_yaw))
+
 
         reward1 = 1 / np.linalg.norm(self.target_pos - gripper_pos)
-        reward2 = 1 / self.target_yaw - yaw_robot
-        reward2 = np.clip(reward2,-10,10)
+        reward2 = 1 / np.linalg.norm(np.abs(self.target_yaw - yaw_robot))
+        #reward2 = reward2[0]
 
 
         print("Reward1: ", reward1)
@@ -80,6 +81,7 @@ class RoboEnv(gym.Env):
 
         self.target_pos = np.array([x, y, z], dtype=np.float64)
         self.target_yaw = np.array([yaw])
+        print("Target Yaw: ", self.target_yaw)
 
 
         obs = np.hstack((obs["robot0_proprio-state"],self.target_pos))
